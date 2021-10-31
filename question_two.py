@@ -43,7 +43,7 @@ def addedge(x, y, cost):
 
 
 # The nodes shown in above example(by alphabets) are
-# implemented using integers addedge(x,y,cost);
+# implemented using integers add_edge(x,y,cost);
 
 addedge(0,1,405)  #SportComplex->Siwaka
 addedge(1,2,380)  #Siwaka->Ph.1A
