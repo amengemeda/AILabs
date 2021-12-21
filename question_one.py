@@ -3,16 +3,6 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 nodes=["SportComplex","Siwaka","Ph.1A","Ph.1B","Phase2","STC","J1","Phase3","ParkingLot","Mada"]
-# edges=[
-#         ("SportComplex","Siwaka"), ("Siwaka","Ph.1A"),
-#         ("Siwaka","Ph.1B"),("Ph.1A","Mada"),
-#         ("Ph.1A","Ph.1B"), ("Ph.1B","Phase2"),
-#         ("Ph.1B","STC"),("STC","Phase2"),("STC","ParkingLot"),
-#         ("Phase2","J1"),("Phase2","Phase3"),
-#         ("J1", "Mada"), ("Phase3", "ParkingLot"),
-#         ("ParkingLot", "Mada"),
-#        ]
-# g.add_edge("SportComplex", "Siwaka", weight = "")
 
 g= nx.Graph()
 g.add_nodes_from(nodes)
@@ -50,6 +40,6 @@ arc_weight=nx.get_edge_attributes(g,'weight')
 pos = nx.spring_layout(g, k=0.15, iterations=20)
 nx.draw_networkx(g, node_pos,with_labels = True, node_color= 'lightblue', node_size=2300,font_size=8)
 nx.draw_networkx_edge_labels(g, node_pos, edge_labels=arc_weight)
-# nx.draw(g,with_labels = True,node_size=2000,node_color='pink',font_size=8)
+
 plt.axis('off')
 plt.show()
