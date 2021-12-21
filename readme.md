@@ -1,5 +1,6 @@
-#AI Group Assignments
-#Group Memebers  
+AI Group Assignments 
+
+Group Memebers  
 122475	Amen Gemeda  
 121425	Mwanza Shem Nzamba  
 119742 Georgina Njoroge  
