@@ -50,7 +50,7 @@ def get_path():
     add_edge(3, 5, 213)  # Ph.1B->STC
     add_edge(4, 7, 500)  # Phase2->J1
     add_edge(4, 8, 160)  # Phase2->Phase3
-    add_edge(5, 7, 210)  # STC->Phase2
+    add_edge(4, 5, 213)  # Phase2->STC
     add_edge(5, 8, 0)  # STC->ParkingLot
     add_edge(7, 9, 630)  # J1->Mada
     add_edge(8, 6, 0)  # Phase3->ParkingLot
@@ -76,7 +76,7 @@ def draw_diagram(nodes, g):
     g.add_edge("Ph.1A", "Ph.1B", weight="100")
     g.add_edge("Ph.1B", "Phase2", weight="112")
     g.add_edge("Ph.1B", "STC", weight="50")
-    g.add_edge("STC", "Phase2", weight="50")
+    g.add_edge("Phase2", "STC", weight="50")
     g.add_edge("STC", "ParkingLot", weight="250")
     g.add_edge("Phase2", "J1", weight="600")
     g.add_edge("Phase2", "Phase3", weight="500")

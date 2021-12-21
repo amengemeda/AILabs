@@ -53,7 +53,7 @@ addedge(3,4,210)  #Ph.1B->Phase2
 addedge(3,5,213)  #Ph.1B->STC
 addedge(4,7,500)  #Phase2->J1
 addedge(4,8,160)  #Phase2->Phase3
-addedge(5,7,210)  #STC->Phase2
+addedge(4,5,213)  #STC->Phase2
 addedge(5,8,0)  #STC->ParkingLot
 addedge(7,9,630)  #J1->Mada
 addedge(8,6,0)  #Phase3->ParkingLot
